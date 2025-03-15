@@ -1,0 +1,508 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+header {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 8px; */
+}
+
+header a {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #ffd700;
+    color: #121212;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    gap: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    position:static;
+    bottom: 0;
+    clear: both;
+    margin-top: 244px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffd700;
+    color: #121212;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.filters form {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.car-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-card h2 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.car-card a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-details {
+    text-align: center; 
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.car-details h3 {
+    margin: 10px 0;
+}
+
+.cars-info {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+
+}
+
+.car-details input {
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+}
+
+.car-details button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.car-details button:hover {
+    background-color: #ffcc00;
+}
+
+.car-details img {
+    width: 34%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.book-button {
+    background-color: #ffd700;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.available-cars {
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.available-cars select, input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    cursor: auto;
+}
+
+.available-cars button {
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.available-cars button:hover {
+    background-color: #ffcc00;
+}
+
+.login{
+    text-align: center;
+    padding: 7%;
+}
+
+.login input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.login button {
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ffcc00;
+}
+
+.registration{
+    text-align: center;
+    padding: 7%;
+}
+
+.registration input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.registration button {
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #ffcc00;
+}
+
+.add-car button, label {
+    padding: 13px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #121212;
+}
+
+
+.add-car input {
+    background-color: #ffd700;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin {
+    text-align: center;
+}
+
+.admin button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin button:hover {
+    background-color: #ffcc00;
+}
+
+.add-new-car {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.delete-all-bookings {
+    text-align: center;
+    padding: 20px;
+}
+
+.delete-all-bookings button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-all-bookings button:hover {
+    background-color: #f20707;
+}
+
+.edit-car {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.edit-car button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-car button:hover {
+    background-color: #ffcc00;
+}
+
+.bookings-list {
+    display: grid;
+    padding: 20px;
+    text-align: center;
+}
+
+.bookings-list h2 {
+    margin: 10px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.bookings-list li {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+}
+
+.bookings-list button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bookings-list button:hover {
+    background-color: #f20707;
+}
+
+.bookings-manager {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 100px;   
+}
+
+.managecars {
+    text-align: center;
+}
+
+.car-manager {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.car-manager button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.car-manager button:hover {
+    background-color: #f20707;
+}
+
+.car-item {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.car-item h2 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile p {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 10px;
+}
+
+.profile li {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 10px;
+}
+
+.profile a {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    background-color: #ffcc00;
+}
+
+.edit-car select{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    cursor: auto;
+}
+
+.add-new-car select {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    cursor: auto;
+}
